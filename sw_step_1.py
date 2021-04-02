@@ -1,3 +1,4 @@
+
 import requests
 from pprint import pprint
 import random
@@ -12,7 +13,7 @@ app = Flask(__name__)
 def get_character():
     character1 = random.randint(1, 88)
 
-    url = 'https://swapi.co/api/people/' + str(character1) + '/'
+    url = 'https://swapi.dev/api/people/' + str(character1) + '/'
 
     response = requests.get(url)
 
@@ -26,7 +27,7 @@ def get_character2(battle_character):
     while battle_character == character2:
         character2 = random.randint(1, 88)
 
-    url2 = 'https://swapi.co/api/people/' + str(character2) + '/'
+    url2 = 'https://swapi.dev/api/people/' + str(character2) + '/'
 
     response2 = requests.get(url2)
 
